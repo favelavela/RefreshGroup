@@ -5,14 +5,12 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import example.damian.code.refreshgroup.Objects.CodeChallenges;
+import example.damian.code.refreshgroup.Objects.Ranks;
+import io.realm.RealmObject;
+
 
 public class User_Container extends RealmObject {
-import java.util.List;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-import org.apache.commons.lang.builder.ToStringBuilder;
-
-    public class UserContainer {
 
         @SerializedName("username")
         @Expose

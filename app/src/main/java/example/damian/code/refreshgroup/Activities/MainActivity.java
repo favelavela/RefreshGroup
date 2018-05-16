@@ -1,7 +1,9 @@
-package example.damian.code.refreshgroup;
+package example.damian.code.refreshgroup.Activities;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import example.damian.code.refreshgroup.R;
 
 public class MainActivity extends Activity {
 
