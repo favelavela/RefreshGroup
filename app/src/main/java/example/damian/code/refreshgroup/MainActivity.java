@@ -26,12 +26,4 @@ public class MainActivity extends Activity {
         searchButton =  findViewById(R.id.button);
         searchButton.setOnClickListener(onClickListener);
     }
-
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-
-    }
 }
