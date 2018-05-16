@@ -3,12 +3,16 @@ package example.damian.code.refreshgroup;
 import android.app.Fragment;
 import android.content.Context;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 /**
@@ -23,9 +27,13 @@ public class searchFragment extends Fragment {
     EditText editText;
     Button searchButton;
     View.OnClickListener onClickListener = new View.OnClickListener() {
+        @RequiresApi(api = Build.VERSION_CODES.M)
         @Override
         public void onClick(View v) {
-
+            if(editText != null){
+                Toast.makeText(getActivity(), editText.getText(), Toast.LENGTH_LONG).show();
+                Log.d("poojan", String.valueOf(editText.getText()));
+            }
         }
     };
     // TODO: Rename parameter arguments, choose names that match
