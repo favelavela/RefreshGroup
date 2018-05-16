@@ -1,4 +1,4 @@
-package com.example.andriatae.code_wars_project.Objects;
+package example.damian.code.refreshgroup.Objects;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;
@@ -107,5 +107,4 @@ public class User_Container extends RealmObject {
         }
 
     }
-s?
-}
+
